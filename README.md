@@ -37,6 +37,8 @@ images with transparent pixels (try converting to jpg beforehand).
 
 ### More options
 
+#### Specify dimensions
+
 You can specify the amount of pixels you'd like by specifying
 
 ```
@@ -45,4 +47,17 @@ python generator.py tree.png out.png --dims 15
 
 which will generate a 15x15 image. The default is 10x10.
 
+#### Auto show image
+
 To auto display the image after output, use the flag `--show true` at the end.
+
+#### Specifying custom colors
+
+If you would like to specify the colors you own, you can also directly edit the python
+file. At the top, find
+
+```python
+COLORS = ["lightgreen", "darkgreen", "blue", "white", "orange", "red", "black", "yellow", "brown"]
+```
+
+You can change this list to include CSS color names or hex codes for the colors you own.
